@@ -1,8 +1,9 @@
 from os.path import exists
+from os.path import join
 
 # Sets up user and accounts, if they do not already exist
 
-required_files = ["user_info.json", "api_keys.json"]
+required_files = [join("src", "user_info.json"), join("src", "api_keys.json")]
 
 
 def check_file(file_name):
