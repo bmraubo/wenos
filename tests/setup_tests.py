@@ -1,5 +1,6 @@
 import pytest
 from src import setup
+from os import remove
 
 
 def test_file_exists():
@@ -14,3 +15,4 @@ def test_file_create():
     setup.create_file(file_name)
 
     assert setup.check_file(file_name) == True
+    remove(file_name)
