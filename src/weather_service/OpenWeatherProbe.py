@@ -10,10 +10,9 @@ class Probe:
     api_key = ""
     user_location = ()
 
-    def get_weather_data(self, api_key, lat_lon):
-        self.request_url = self.create_request_url(api_key, lat_lon)
-        response = self.make_request()
-        return self.convert_weather_data_to_dict(response.text)
+    def get_weather_data(self):
+        self.response = self.make_request()
+        return self.response
 
     def set_api_key(self, api_key):
         self.api_key = api_key
@@ -26,6 +25,3 @@ class Probe:
 
     def make_request(self):
         return requests.post(self.request_url)
-
-    def convert_weather_data_to_dict(self, weather_data_string):
-        return json.loads(weather_data_string)

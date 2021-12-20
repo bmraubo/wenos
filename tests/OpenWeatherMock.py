@@ -17,7 +17,7 @@ class Probe:
 
     def get_weather_data(self):
         self.response = self.make_request()
-        return self.convert_weather_data_to_dict(self.response)
+        return self.response
 
     def set_api_key(self, api_key):
         self.api_key = api_key
@@ -32,9 +32,6 @@ class Probe:
         self.request_sent = True
         self.request_sent_to = self.request_url
         return json.loads(self.read_response_stub())
-
-    def convert_weather_data_to_dict(self, weather_data_string):
-        return json.loads(weather_data_string)
 
     # Mock methods
     def read_response_stub(self):
