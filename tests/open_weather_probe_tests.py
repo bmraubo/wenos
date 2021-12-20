@@ -31,7 +31,7 @@ def test_create_request_url():
     assert probe.request_url == expected_url
 
 
-def test_get_weather_data():
+def test_make_request():
     api_key = "aaaa"
     lat_lon = (0.02, 0.01)
 
