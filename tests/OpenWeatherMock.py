@@ -31,7 +31,7 @@ class Probe:
     def make_request(self):
         self.request_sent = True
         self.request_sent_to = self.request_url
-        return self.read_response_stub()
+        return json.loads(self.read_response_stub())
 
     def convert_weather_data_to_dict(self, weather_data_string):
         return json.loads(weather_data_string)

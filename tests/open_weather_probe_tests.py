@@ -35,7 +35,11 @@ def test_get_weather_data():
     api_key = "aaaa"
     lat_lon = (0.02, 0.01)
 
-    probe = Probe(api_key, lat_lon)
-    probe.get_weather_data(api_key, lat_lon)
+    probe = Probe()
+    probe.set_api_key(api_key)
+    probe.set_user_location(lat_lon)
+    probe.create_request_url()
+    probe.make_request()
 
     assert probe.request_sent == True
+    assert type(probe.response) == dict
