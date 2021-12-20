@@ -1,26 +1,41 @@
-from src.weather_service import OpenWeatherProbe
-from src.weather_service import DataGatherer
-import requests
-import os.path
+from OpenWeatherMock import Probe
+
+
+def test_set_api_key():
+    probe = Probe()
+    probe.set_api_key("aaaa")
+
+    assert probe.api_key == "aaaa"
+
+
+def test_set_user_location():
+    user_location = (0.00, 0.00)
+
+    probe = Probe()
+    probe.set_user_location(user_location)
+
+    assert probe.user_location == user_location
 
 
 def test_create_request_url():
     api_key = "aaaa"
     lat_lon = (0.02, 0.01)
 
-    weather_probe = OpenWeatherProbe.Probe(api_key, lat_lon)
+    probe = Probe()
+    probe.set_api_key(api_key)
+    probe.set_user_location(lat_lon)
+    probe.create_request_url()
 
     expected_url = "https://api.openweathermap.org/data/2.5/onecall?lat=0.02&lon=0.01&exclude=minutely&appid=aaaa&units=metric"
 
-    assert weather_probe.request_url == expected_url
+    assert probe.request_url == expected_url
 
 
-def test_make_request():
-    data_gatherer = DataGatherer.DataGatherer(os.path.join("src", "api_keys.json"))
-    api_key = data_gatherer.api_keys["open_weather"]["api_key"]
-    lat_lon = (51.026376, -1.315293)
+def test_get_weather_data():
+    api_key = "aaaa"
+    lat_lon = (0.02, 0.01)
 
-    probe = OpenWeatherProbe.Probe(api_key, lat_lon)
-    response = probe.make_request()
+    probe = Probe(api_key, lat_lon)
+    probe.get_weather_data(api_key, lat_lon)
 
-    assert response.status_code == 200
+    assert probe.request_sent == True

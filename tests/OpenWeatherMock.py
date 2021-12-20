@@ -1,19 +1,23 @@
-import requests
+import os.path
 import json
 
 
 class Probe:
-    service = "open_weather"
+    service = "service"
     request_url = ""
     units = "metric"
     response = {}
     api_key = ""
     user_location = ()
 
-    def get_weather_data(self, api_key, lat_lon):
-        self.request_url = self.create_request_url(api_key, lat_lon)
-        response = self.make_request()
-        return self.convert_weather_data_to_dict(response.text)
+    # Mock variables
+    response_stub = {}
+    request_sent = False
+    request_sent_to = ""
+
+    def get_weather_data(self):
+        self.response = self.make_request()
+        return self.convert_weather_data_to_dict(self.response)
 
     def set_api_key(self, api_key):
         self.api_key = api_key
@@ -25,7 +29,15 @@ class Probe:
         self.request_url = f"https://api.openweathermap.org/data/2.5/onecall?lat={self.user_location[0]}&lon={self.user_location[1]}&exclude=minutely&appid={self.api_key}&units={self.units}"
 
     def make_request(self):
-        return requests.post(self.request_url)
+        self.request_sent = True
+        self.request_sent_to = self.request_url
+        return self.read_response_stub()
 
     def convert_weather_data_to_dict(self, weather_data_string):
         return json.loads(weather_data_string)
+
+    # Mock methods
+    def read_response_stub(self):
+        with open(os.path.join("tests", "response_stub.json"), "r") as f:
+            file_contents = f.read()
+            return file_contents
