@@ -17,6 +17,6 @@ class TimeManager:
     def set_alert_check_frequency(self, alert_check_frequency):
         self.alert_check = alert_check_frequency
 
-    def is_it_notification_time(self):
+    def notification_time(self):
         current_time = self.check_time()
         return current_time in self.notification_times

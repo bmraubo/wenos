@@ -11,7 +11,7 @@ class Director:
 
     def start(self):
         while True:
-            if self.time_manager.is_it_notification_time():
+            if self.time_manager.notification_time():
                 # Update Weather Data
                 # Send weather data to Interpreter
                 # Send Data Packet to Composer
