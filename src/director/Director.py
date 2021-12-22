@@ -1,4 +1,5 @@
 from datetime import datetime
+from time import sleep
 from src.director.TimeManager import TimeManager
 
 
@@ -29,3 +30,4 @@ class Director:
                 pass
             else:
                 pass
+            sleep(60)
