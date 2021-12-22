@@ -13,3 +13,12 @@ class Director:
     def is_it_notification_time(self):
         current_time = self.check_time()
         return current_time in self.notification_times
+
+    def time_manager(self):
+        while True:
+            if self.is_it_notification_time():
+                # update the weather data
+                # send out an update email
+                pass
+            else:
+                pass
