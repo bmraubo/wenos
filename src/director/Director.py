@@ -16,18 +16,16 @@ class Director:
             if self.time_manager.notification_time(current_time):
                 # Update Weather Data
                 # Send weather data to Interpreter
-                # Send Data Packet to Composer
+                # Send Data Packet to Composer to create Notification Email
                 # Send Email
                 pass
-            elif self.time_manager.alert_check_time(current_time):
+            if self.time_manager.alert_check_time(current_time):
                 # Update Weather Data
                 # Send weather Data to Interpreter
                 # Check Weather conditions
                 # if weather conditions are good, pass
                 # if specified weather conditions are met, send alert notification
-                # Send Data Packet to Composer
+                # Send Data Packet to Composer to create Alert Email
                 # Send Email
-                pass
-            else:
                 pass
             sleep(60)
