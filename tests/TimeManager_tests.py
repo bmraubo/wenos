@@ -10,7 +10,7 @@ def test_time_check():
     assert time_manager.check_time() == current_time
 
 
-def test_add_notification_time():
+def test_time_manager_add_notification_time():
     notification_time = "01:01"
 
     time_manager = TimeManager.TimeManager()

@@ -2,7 +2,8 @@ from datetime import datetime
 
 
 class TimeManager:
-    notification_times = []
+    def __init__(self):
+        self.notification_times = []
 
     def check_time(self):
         return datetime.now().strftime("%H:%M")
