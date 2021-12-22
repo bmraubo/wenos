@@ -8,3 +8,12 @@ def test_director_time_check():
     director = Director.Director()
 
     assert director.check_time() == current_time
+
+
+def test_director_add_notification_time():
+    notification_time = "01:01"
+
+    director = Director.Director()
+    director.add_notification_time(notification_time)
+
+    assert director.notification_times[0] == notification_time
