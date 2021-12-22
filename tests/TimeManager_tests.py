@@ -20,27 +20,17 @@ def test_time_manager_add_notification_time():
 
 
 def test_notification_time():
-    notification_time = datetime.now().strftime("%H:%M")
+    current_time = "00:00"
 
     time_manager = TimeManager.TimeManager()
-    time_manager.add_notification_time(notification_time)
+    time_manager.add_notification_time(current_time)
 
-    assert time_manager.notification_time() == True
-
-
-def test_set_alert_check_frequency():
-    alert_check_frequency = "00"
-
-    time_manager = TimeManager.TimeManager()
-    time_manager.add_alert_check_frequency(alert_check_frequency)
-
-    assert time_manager.alert_check == [alert_check_frequency]
+    assert time_manager.notification_time(current_time) == True
 
 
 def test_alert_check_time():
-    alert_check_frequency = datetime.now().strftime("%M")
+    current_time = "00:00"
 
     time_manager = TimeManager.TimeManager()
-    time_manager.add_alert_check_frequency(alert_check_frequency)
 
-    assert time_manager.alert_check_time() == True
+    assert time_manager.alert_check_time(current_time) == True

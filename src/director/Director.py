@@ -11,13 +11,14 @@ class Director:
 
     def start(self):
         while True:
-            if self.time_manager.notification_time():
+            current_time = datetime.now().strftime("%H:%M")
+            if self.time_manager.notification_time(current_time):
                 # Update Weather Data
                 # Send weather data to Interpreter
                 # Send Data Packet to Composer
                 # Send Email
                 pass
-            elif self.time_manager.alert_check_time():
+            elif self.time_manager.alert_check_time(current_time):
                 # Update Weather Data
                 # Send weather Data to Interpreter
                 # Check Weather conditions
