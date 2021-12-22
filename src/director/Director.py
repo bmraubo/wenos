@@ -1,24 +1,31 @@
 from datetime import datetime
+from time import sleep
+from src.director.TimeManager import TimeManager
 
 
 class Director:
-    notification_times = []
-
-    def check_time(self):
-        return datetime.now().strftime("%H:%M")
+    def __init__(self):
+        self.time_manager = TimeManager()
 
     def add_notification_time(self, notification_time):
-        self.notification_times.append(notification_time)
+        self.time_manager.add_notification_time(notification_time)
 
-    def is_it_notification_time(self):
-        current_time = self.check_time()
-        return current_time in self.notification_times
-
-    def time_manager(self):
+    def start(self):
         while True:
-            if self.is_it_notification_time():
-                # update the weather data
-                # send out an update email
+            current_time = datetime.now().strftime("%H:%M")
+            if self.time_manager.notification_time(current_time):
+                # Update Weather Data
+                # Send weather data to Interpreter
+                # Send Data Packet to Composer to create Notification Email
+                # Send Email
                 pass
-            else:
+            if self.time_manager.alert_check_time(current_time):
+                # Update Weather Data
+                # Send weather Data to Interpreter
+                # Check Weather conditions
+                # if weather conditions are good, pass
+                # if specified weather conditions are met, send alert notification
+                # Send Data Packet to Composer to create Alert Email
+                # Send Email
                 pass
+            sleep(60)
