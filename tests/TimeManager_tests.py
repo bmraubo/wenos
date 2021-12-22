@@ -26,3 +26,13 @@ def test_is_it_notification_time():
     time_manager.add_notification_time(notification_time)
 
     assert time_manager.is_it_notification_time() == True
+
+
+def test_set_alert_check_frequency():
+    alert_check_frequency = "hour"
+
+    time_manager = TimeManager.TimeManager()
+    time_manager.set_alert_check_frequency(alert_check_frequency)
+
+    assert time_manager.alert_check == alert_check_frequency
+    assert time_manager.alert_check_frequencies[alert_check_frequency] == "00"
