@@ -17,5 +17,14 @@ class Director:
                 # Send Data Packet to Composer
                 # Send Email
                 pass
+            elif self.time_manager.alert_check_time():
+                # Update Weather Data
+                # Send weather Data to Interpreter
+                # Check Weather conditions
+                # if weather conditions are good, pass
+                # if specified weather conditions are met, send alert notification
+                # Send Data Packet to Composer
+                # Send Email
+                pass
             else:
                 pass
