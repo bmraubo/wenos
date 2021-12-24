@@ -22,6 +22,15 @@ def test_create_data_packet_template():
     assert data_packet_builder.data == data_packet_template
 
 
+def test_set_data_timestamp():
+    date = "14/15/20 15:45:40"
+
+    data_packet_builder = DataPacketBuilder()
+    data_packet_builder.set_data_timestamp(date)
+
+    assert data_packet_builder.data["data_timestamp"] == date
+
+
 def test_set_current_weather():
     current_temp = 5
     current_sunset = "15:56"

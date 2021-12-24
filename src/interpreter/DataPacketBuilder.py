@@ -1,6 +1,5 @@
 import os.path
 import json
-import datetime
 
 
 class DataPacketBuilder:
@@ -12,6 +11,9 @@ class DataPacketBuilder:
             os.path.join("src", "interpreter", "data_packet_template.json"), "r"
         ) as f:
             return json.loads(f.read())
+
+    def set_data_timestamp(self, datetime: str):
+        self.data["data_timestamp"] = datetime
 
     def set_current_weather(self, data_type: str, data_value):
         self.data["current"][data_type] = data_value
