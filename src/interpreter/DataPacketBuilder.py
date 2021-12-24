@@ -1,5 +1,6 @@
 import os.path
 import json
+import datetime
 
 
 class DataPacketBuilder:
@@ -14,3 +15,6 @@ class DataPacketBuilder:
 
     def set_current_weather(self, data_type: str, data_value):
         self.data["current"][data_type] = data_value
+
+    def set_hourly_weather(self, hour: str, data_type: str, data_value):
+        self.data["hourly"][hour][data_type] = data_value

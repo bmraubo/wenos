@@ -24,8 +24,21 @@ def test_create_data_packet_template():
 
 def test_set_current_weather():
     current_temp = 5
+    current_sunset = "15:56"
 
     data_packet_builder = DataPacketBuilder()
     data_packet_builder.set_current_weather("temp", current_temp)
+    data_packet_builder.set_current_weather("sunset", current_sunset)
 
     assert data_packet_builder.data["current"]["temp"] == 5
+    assert data_packet_builder.data["current"]["sunset"] == current_sunset
+
+
+def test_set_hourly_weather():
+    hour = "+1"
+    temp = 5
+
+    data_packet_builder = DataPacketBuilder()
+    data_packet_builder.set_hourly_weather(hour, "temp", temp)
+
+    assert data_packet_builder.data["hourly"]["+1"]["temp"] == 5

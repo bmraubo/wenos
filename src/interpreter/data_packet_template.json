@@ -13,175 +13,175 @@
         "weather": {
             "general": "",
             "description": ""
+        }
+    },
+    "hourly": {
+        "+1": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
         },
-        "hourly": {
-            "+1": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+2": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+3": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+4": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+5": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+6": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+7": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+8": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+9": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+10": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+11": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
-            },
-            "+12": {
-                "time": "",
-                "day/night": "",
-                "temp": 0,
-                "feelslike": 0,
-                "humidity": 0,
-                "uvi": 0,
-                "wind_speed": 0,
-                "wind_gusts": 0,
-                "weather": {
-                    "general": "",
-                    "description": ""
-                }
+        "+2": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+3": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+4": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+5": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+6": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+7": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+8": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+9": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+10": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+11": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
+            }
+        },
+        "+12": {
+            "time": "",
+            "day/night": "",
+            "temp": 0,
+            "feelslike": 0,
+            "humidity": 0,
+            "uvi": 0,
+            "wind_speed": 0,
+            "wind_gusts": 0,
+            "weather": {
+                "general": "",
+                "description": ""
             }
         }
     }
