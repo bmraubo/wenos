@@ -20,3 +20,12 @@ def test_create_data_packet_template():
     assert len(data_packet_builder.data) != 0
     assert data_packet_builder.data["current"]["temp"] == 0
     assert data_packet_builder.data == data_packet_template
+
+
+def test_set_current_weather():
+    current_temp = 5
+
+    data_packet_builder = DataPacketBuilder()
+    data_packet_builder.set_current_weather("temp", current_temp)
+
+    assert data_packet_builder.data["current"]["temp"] == 5
