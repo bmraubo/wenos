@@ -51,3 +51,18 @@ def test_set_hourly_weather():
     data_packet_builder.set_hourly_weather(hour, "temp", temp)
 
     assert data_packet_builder.data["hourly"]["+1"]["temp"] == 5
+
+
+def test_add_weather_alert():
+    alert = {
+        "sender_name": "NWS Tulsa",
+        "event": "Heat Advisory",
+        "start": "14/15/20 15:45:40",
+        "end": "14/15/20 16:45:40",
+        "description": "...HEAT ADVISORY IN EFFECT",
+    }
+
+    data_packet_builder = DataPacketBuilder()
+    data_packet_builder.add_weather_alert(alert)
+
+    assert len(data_packet_builder.data["alerts"]) == 1

@@ -20,3 +20,6 @@ class DataPacketBuilder:
 
     def set_hourly_weather(self, hour: str, data_type: str, data_value):
         self.data["hourly"][hour][data_type] = data_value
+
+    def add_weather_alert(self, alert: dict):
+        self.data["alerts"].append(alert)
