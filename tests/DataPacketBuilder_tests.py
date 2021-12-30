@@ -66,3 +66,13 @@ def test_add_weather_alert():
     data_packet_builder.add_weather_alert(alert)
 
     assert len(data_packet_builder.data["alerts"]) == 1
+
+
+def test_generate_data_packet():
+    data_packet_builder = DataPacketBuilder()
+
+    data_packet_builder.set_current_weather("temp", 5)
+
+    generated_packet = data_packet_builder.generate_data_packet()
+
+    assert generated_packet["current"]["temp"] == 5

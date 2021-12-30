@@ -23,3 +23,6 @@ class DataPacketBuilder:
 
     def add_weather_alert(self, alert: dict):
         self.data["alerts"].append(alert)
+
+    def generate_data_packet(self):
+        return self.data
