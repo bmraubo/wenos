@@ -18,6 +18,7 @@ class WeatherService:
     def prepare_probe(self, probe):
         probe.set_api_key(self.api_keys[probe.service])
         probe.set_user_location(self.user_location)
+        probe.create_request_url()
         self.probe = probe
 
     def get_weather_data(self):
