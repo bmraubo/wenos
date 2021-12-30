@@ -1,6 +1,7 @@
 # private information
 user_info.json
 api_keys.json
+sample_data.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
