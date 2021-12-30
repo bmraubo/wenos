@@ -18,7 +18,7 @@ def test_create_data_packet_template():
 
     assert data_packet_builder.data != None
     assert len(data_packet_builder.data) != 0
-    assert data_packet_builder.data["current"]["temp"] == 0
+    assert data_packet_builder.data["current"]["temp"] == None
     assert data_packet_builder.data == data_packet_template
 
 

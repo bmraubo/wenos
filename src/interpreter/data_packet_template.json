@@ -4,12 +4,12 @@
         "time": "",
         "sunrise": "",
         "sunset": "",
-        "temp": 0,
-        "feelslike": 0,
-        "humidity": 0,
-        "uvi": 0,
-        "wind_speed": 0,
-        "wind_gusts": 0,
+        "temp": null,
+        "feelslike": null,
+        "humidity": null,
+        "uvi": null,
+        "wind_speed": null,
+        "wind_gusts": null,
         "weather": {
             "general": "",
             "description": ""
@@ -19,68 +19,72 @@
         "+1": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+2": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+3": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+4": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+5": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
@@ -89,26 +93,27 @@
         "+6": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+7": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
@@ -117,12 +122,12 @@
         "+8": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
@@ -131,40 +136,41 @@
         "+9": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
             }
         },
-        "+10": {
+        "+1null": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         },
         "+11": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
@@ -173,16 +179,17 @@
         "+12": {
             "time": "",
             "day/night": "",
-            "temp": 0,
-            "feelslike": 0,
-            "humidity": 0,
-            "uvi": 0,
-            "wind_speed": 0,
-            "wind_gusts": 0,
+            "temp": null,
+            "feelslike": null,
+            "humidity": null,
+            "uvi": null,
+            "wind_speed": null,
+            "wind_gusts": null,
             "weather": {
                 "general": "",
                 "description": ""
-            }
+            },
+            "pop": null
         }
     },
     "alerts": []
